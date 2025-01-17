@@ -1,0 +1,21 @@
+import { useParams } from "react-router-dom";
+import ReadComponent from "../../components/todo/ReadComponent";
+
+const ReadPage = () => {
+
+    const  {tno} = useParams()
+    console.log("###### tno ==" + tno);
+
+    return (
+        <div className="font-extrabold w-full bg-white">
+ 
+ 
+            Todo Read Page Component {tno}
+           <ReadComponent tno={tno}></ReadComponent> 
+ 
+        </div>
+    );
+}
+
+
+export default ReadPage;
